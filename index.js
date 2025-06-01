@@ -14,7 +14,7 @@ app.post("/agent", async (req, res) => {
 
   try {
     const completion = await openai.createChatCompletion({
-      model: "gpt-4o",
+      model: "gpt-4o", // Можно заменить на "gpt-3.5-turbo", если GPT-4o недоступна
       messages: [{ role: "user", content: input }],
     });
 
